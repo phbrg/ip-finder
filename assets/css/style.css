@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--colorido);
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  position: absolute;
+  width: 1vh;
+  background-color: var(--corFundo);
+}
+
+* {
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-style: normal;
+  font-family: 'Montserrat';
+  margin: 0;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  letter-spacing: 0.05vh;
+  resize: none;
+  outline: none;
+  border: 0;
+  color: var(--corTexto);
+  scroll-behavior: smooth;
+}
+
+/* root */
+:root {
+  --corTexto: #111;
+  --corFundo: #fff;
+  --colorido: #4b7edd;
+}
+
+/* main */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: var(--colorido);
+}
+
+.finder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  min-height: 90%;
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 7px;
+}
+
+.finder h1 {
+  margin: 1%;
+}
+
+.entrada {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  height: 15%;
+  min-width: 70%;
+  background-color: rgb(239, 239, 239);
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.entrada input {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 5px;
+  border-bottom: 2px solid var(--colorido);
+  background-color: transparent;
+}
+
+.entrada button {
+  border-radius: 3px;
+  background-color: var(--colorido);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 10px 25px;
+}
+
+.entrada button:hover {
+  filter: brightness(80%);
+  cursor: pointer;
+}
+
+.pai-saida {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  min-height: 60%;
+  min-width: 90%;
+  overflow-y: scroll;
+}
+
+.saida li {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.saida li::marker {
+  color: var(--colorido);
+}
+
+.finder p {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* main */
+@media screen and (max-width: 1000px) {
+  .finder {
+    padding: 15px;
+    min-height: 50%;
+    width: 80%;
+  }
+  .finder > * {
+    margin: 2%;
+  }
+  .finder h1 {
+    font-size: 2.2rem;
+  }
+  .finder p {
+    font-size: 2rem;
+  }
+  .entrada {
+    width: 100%;
+  }
+  .entrada input {
+    font-size: 2rem;
+  }
+  .entrada button {
+    font-size: 1.5rem;
+  }
+  .saida li {
+    font-size: 2rem;
+  }
+}

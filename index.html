@@ -1,0 +1,45 @@
+<html lang="pr-br">
+        <head>
+            <link rel="stylesheet" href="./assets/css/style.css">
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            <title>IP Finder</title>
+            <link rel="shortcut icon" href="#" type="image/x-icon">
+        </head>
+    <body>
+
+        <main>
+
+            <div class="finder">
+
+                <h1>IP Finder</h1>
+
+                <div class="entrada">
+                    <input type="text" id="ipEntrada" placeholder="IP">
+                    <button onclick="findIp()">Pesquisar</button>
+                </div>
+                
+                <p class="error">IP Invalido!</p>
+
+                <div class="pai-saida">
+                    <ul class="saida">
+                        <li class="printIP"></li>
+                        <li class="printVersion"></li>
+                        <li class="printCity"></li>
+                        <li class="printRegion"></li>
+                        <li class="printCountry"></li>
+                        <li class="printLat"></li>
+                        <li class="printLong"></li>
+                        <li class="printTime"></li>
+                        <li class="printAsc"></li>
+                        <li class="printOrg"></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </main>
+
+        <script src="./assets/script/script.js"></script>
+    </body>
+</html>
